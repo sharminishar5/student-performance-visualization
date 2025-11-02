@@ -101,7 +101,7 @@ if page.startswith("Objective 1"):
     # Figure 1
     render_block(
         "Obj1_F1.png",
-        "1. Distribution of CGPA According to Gender",
+        "1. Distribution of current CGPA by Gender",
         ("This visualization shows the distribution of CGPA of student’s according to gender. The findings demonstrate that male and female students have a similar academic range and, therefore, there are not significant gender performance differences. The median CGPA is a little higher among female students indicating more stability in academic performance whereas it is more varied among the male students. Generally, the visualization shows that gender does not play a big role in determining the academic performance of students. This observation highlights the fact that attendance and other behavioral factors like study habits are more significant in defining success. The equal balance of both genders serves to emphasize that there might be no difference in the level of academic opportunities and motivation among the students and this is in favor of inclusivity in the learning process.")
     )
 
@@ -115,7 +115,7 @@ if page.startswith("Objective 1"):
     # Figure 3
     render_block(
         "Obj1_F3.png",
-        "3. Effect of Class Attendance on CGPA",
+        "3. Average Attendance vs Current CGPA by Age Group",
         ("The figure analyzes the effect of class attendance on CGPA of students in various age groups. It is always found that students who attend school regularly perform positively on their academic performances meaning that classroom attendance is a significant contributor towards learning performance. Younger students of the age group 1820 have slightly different values of CGPA, which may be caused by more attention to school during childhood. Conversely, older students are more varied, which may represent external obligations or time pressure. In summation, the graphic illustration underlines that the attendance is not only more fruitful with regard to the understanding and retention; it also has a direct positive influence on the academic performance. Irrespective of the age, active learners participate in classroom activities and thus are more likely to sustain an excellent CGPA performance and academic excellence.")
     )
 
@@ -127,19 +127,19 @@ elif page.startswith("Objective 2"):
 
     render_block(
         "Obj2_F1.png",
-        "1. Daily Study Hours vs Current CGPA",
+        "1. Relationship Between Daily Study Hours and Current CGPA",
         ("The visualization examines the correlation between the number of hours the students study per day and the present CGPA. There is a positive correlation with students who have more time in studying having higher academic performance. These trends are not just in the male students where both genders follow a similar pattern indicating that good study habits are relevant in both genders. The correlation line shows that regular study habits result in a slow academic growth. This observation highlights the essence of time management and constant schedules of studying in improving the level of learning. Altogether, the number is in favor of the idea that the greater the study participation, the better academic performance of the students.")
     )
 
     render_block(
         "Obj2_F2.png",
-        "2. Attendance vs CGPA",
+        "2. Impact of Attendance on Academic Performance",
         ("The figure examines how the level of attendance to classes impacts the CGPA of the students. The boxplot indicates the percentage of attendance of students with CGPA values also takes better values and therefore indicates that there is a very strong correlation between class participation and academic success. Individuals who have poor attendance show more variability of performance implying lack of consistent engagement in learning. Frequent attendance can enable the student to understand concepts well, keep track of course work and excel in exams. This trend underscores attendance as a key academic behavior, which determines the learning outcome and continuity. In short, attending classes actively can be discussed as a critical contributor to the increase in academic performance.")
     )
 
     render_block(
         "Obj2_F3.png",
-        "3. Study Sessions per Day vs Current CGPA",
+        "3. Study Frequency per Day vs Current CGPA",
         ("The visualization studies the relationship between the number of study sessions per day and the academic performance of the students. The trend line shows that there is a moderate positive correlation which shows that students studying more than once a day have higher average CGPA. The trend indicates that regular short study sessions are better than unregular long study sessions. Gender also does not seem to play a significant role in this pattern, that is, teaching habits have the same benefits to all students. The figure highlights the importance of distributed learning habits, in which the recurrence of engagement with learning improves the understanding and retention. This observation is consistent with academic studies that indicate that regular study sessions enhance concentration, decrease exhaustion and determine excellent scholarly outcomes.")
     )
 
@@ -163,7 +163,7 @@ elif page.startswith("Objective 3"):
 
     render_block(
         "Obj3_F3.png",
-        "3. Scholarship Status vs CGPA",
+        "3. Scholarship Status vs Academic Performance",
         ("This figure compares CGPA between students who receive scholarships and those who do not. The values of CGPA and the variation of performance in scholarship holders are usually less and smaller in value, as there is a high degree of academic discipline and steady performance. The non-scholarship students are distributed more widely in their score line with some having high performance which can later make them eligible to receive awards. The findings explain how recognition schemes such as scholarships are not only rewarding but also encouragement of more efforts. The trend supports a vicious cycle between performance and achievement and academic rewards, namely students who succeed are more likely to continue succeeding because of more opportunities and motivation.")
     )
 
