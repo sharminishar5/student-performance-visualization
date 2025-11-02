@@ -1,4 +1,5 @@
 import streamlit as st
+import streamlit.components.v1 as components
 from pathlib import Path
 
 # --- PAGE SETTINGS ---
@@ -51,7 +52,10 @@ st.markdown('<div class="header">', unsafe_allow_html=True)
 st.markdown('<div class="title">🎓 Visualizing Student Performance: Patterns and Correlations</div>', unsafe_allow_html=True)
 st.markdown('</div>', unsafe_allow_html=True)
 
-# --- SIDEBAR NAVIGATION ---
+# --- SIDEBAR NAVIGATION (scroll-to-top on page change) ---
+if 'last_page' not in st.session_state:
+    st.session_state.last_page = None
+
 page = st.sidebar.selectbox(
     "Navigate Pages",
     [
@@ -59,7 +63,13 @@ page = st.sidebar.selectbox(
         "Objective 2: To explore the relationship between students' study patterns, attendance, and CGPA.",
         "Objective 3: To identify correlations among key factors influencing overall academic success."
     ],
+    key="sidebar_page"
 )
+
+# If the user selected a different page than before, scroll to top
+if st.session_state.last_page != page:
+    components.html("<script>window.scrollTo({top:0,behavior:'smooth'});</script>", height=0)
+    st.session_state.last_page = page
 
 # Helper to render a figure, text and download button (uses exact filenames you provided)
 def render_block(fig_file, fig_title, full_text):
